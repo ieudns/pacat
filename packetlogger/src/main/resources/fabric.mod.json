@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "packetlogger",
+  "version": "1.0.0",
+  "name": "Packet Logger",
+  "description": "Logs all incoming and outgoing Minecraft packets",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.packetlogger.PacketLoggerMod"
+    ]
+  },
+  "mixins": [
+    "packetlogger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.20.1"
+  }
+}
